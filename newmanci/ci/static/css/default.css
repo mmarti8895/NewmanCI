@@ -1,0 +1,41 @@
+body{
+    background: url('/static/img/lisnr_logo.png') no-repeat fixed;
+    background-position: center center;
+}
+.base-error-layout {
+    width: 960px;
+}
+.left-error-box {
+    margin-left:10px;
+    margin-right:10px;
+    width: 132px;
+    float:left;
+    box-shadow: 20px 20px 15px 15px #bfa848 inset;
+}
+.right-error-box {
+    margin-left:0px;
+    padding:20px;
+    width: 480px;
+    float:left;
+    box-shadow: 6px 6px #bfa848 inset;
+}
+.error-msg {
+    color: #23568b;
+    text-shadow: 1.5px 1.5px #bfa848;
+    font-size: 34px;
+    font-family: Verdana;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.home-page-link {
+    margin-left: 20px;
+    color: #CCC;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.home-page-link:hover{
+    color: #FFFFFF;
+    text-shadow: 1px 1px #bfa848;
+}

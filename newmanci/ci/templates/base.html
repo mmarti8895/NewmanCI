@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <!-- Bootstrap -->
+        <link href="{% static 'css/bootstrap-fluid-adj.css' %}" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+        <link href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet">
+        <link href="{% static 'css/app.css' %}" rel="stylesheet">
+        <link href="{% static 'css/accordian.css' %}" rel="stylesheet">
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <title>{% block title %}LISNR's Newman CI{% endblock %}</title>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+               <ul class="nav nav-tabs">
+               <li>
+                <figure class="left-error-box">
+                    <a class="brand" href="https://www.lisnr.com">
+                        <img src="/static/img/lisnr_logo.png" width="161px" height="68px" style="border:2px solid #21578A;border-radius:4px;margin-left:10px;margin-top:1px;" />
+                    </a>
+                </figure>
+               </li>
+               <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="height:68px;margin-top:1px;padding: 20px 15px 10px !important;">
+                      Menu <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                           {% if user.is_authenticated %}
+                               <li class="navbar-text">Welcome, {{ user.username }}!</li>
+                               <li style="width:200px;float:left;">
+                                   <a class="brand" href="/home/" style="float:left;width:200px;">
+                                       Home
+                                   </a>
+                               </li>
+                               <li style="width:200px;float:left;">
+                                   <a href="/logout/" style="float:left;width:200px;">
+                                       Logout
+                                   </a>
+                               </li>
+                           {% endif %}
+                           {% if not user.is_authenticated %}
+                                <li><a href="/register/">Register</a></li>
+                                <li><a href="/login/">Login</a></li>
+                           {% endif %}
+                       </ul>
+                    </li>
+                    </ul>
+                   <!--/.nav-collapse -->
+        </div>
+        <div class="container-non-responsive">
+            <div class="row-fluid">
+                    <!--/span-->
+                    <div class="section">
+                        {% block body_block %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <!--/span-->
+            </div>
+            <!--/row-->
+        </div>
+        <!--/.fluid-container-->
+        <footer>
+            <hr>
+            <div class="container" style="float:left;margin-left:20px !important;">
+                <p>&copy; 2014 LISNR, INC. &#8212; Newman CI</p>
+            </div>
+        </footer>
+        <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/rango-ajax.js' %}"></script>
+        <script src="{% static 'js/jquery.accordian.js' %}"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                //custom animation for open/close
+                $.fn.slideFadeToggle = function(speed, easing, callback) {
+                    return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+                };
+
+                $('.accordion').accordion({
+                    defaultOpen: 'section1',
+                    cookieName: 'nav',
+                    speed: 'slow',
+                    animateOpen: function (elem, opts) { //replace the standard slideUp with custom function
+                        elem.next().stop(true, true).slideFadeToggle(opts.speed);
+                    },
+                    animateClose: function (elem, opts) { //replace the standard slideDown with custom function
+                        elem.next().stop(true, true).slideFadeToggle(opts.speed);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

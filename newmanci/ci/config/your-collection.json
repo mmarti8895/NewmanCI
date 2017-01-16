@@ -1,0 +1,625 @@
+{
+	"id": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+	"name": "<Your Collection Name>",
+	"description": "",
+	"order": [
+		"52bb3690-b3a1-c637-8dec-71b00b42b1b5",
+		"8bb82a44-06b9-e6e2-2b81-8341cec24a1a",
+		"83806829-fb33-705d-a447-0f3b5029c2c8",
+		"5c2145d0-3d80-e0f7-cfbc-18f5a1c1d816",
+		"276ff64f-47ed-407a-5848-7d42dc9fd42b",
+		"8ece7936-0f47-9cb3-0915-6fa65a6ee4cf",
+		"34a5f551-795e-5304-b25b-e8a0b65a4ef6",
+		"580e5552-2a9f-5709-854b-66af9679af7a",
+		"7d2e615b-4362-d147-0fb0-fc0a4a29becf",
+		"ca1c8dcf-5cc9-0eb3-50b2-f58bad2a8760",
+		"1ba83867-f7bd-5956-f8a9-2ff146a6dc44",
+		"65766920-d16a-dc79-533c-6b35694a88ee",
+		"0189ba17-e424-a186-9d62-fd2b062cd143",
+		"e11b0293-fd77-0bce-e1ba-20c405346dd7",
+		"f9d1acd0-7077-ce46-b1e1-06c41ddd9da0",
+		"4bd4ade9-996d-8dca-ea51-67392cee24f6",
+		"f2055792-efcd-d017-7c93-32b862748818",
+		"19967332-8b14-5eb2-6639-a500a180df81",
+		"66acd41d-869d-c7a1-7089-da926eb28c63"
+	],
+	"folders": [],
+	"timestamp": 1416499066338,
+	"synced": false,
+	"requests": [
+		{
+			"id": "0189ba17-e424-a186-9d62-fd2b062cd143",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/music/download/album",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "country",
+					"value": "US",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "release_id",
+					"value": "3501049",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500856842,
+			"name": "dl album - 2. download",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "19967332-8b14-5eb2-6639-a500a180df81",
+			"headers": "",
+			"url": "{{server}}/artist/345",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "artist - 2. get artist detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1416501153139,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"synced": false
+		},
+		{
+			"id": "1ba83867-f7bd-5956-f8a9-2ff146a6dc44",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/music/download-url/track",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "country",
+					"value": "US",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "release_id",
+					"value": "3501049",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "track_id",
+					"value": "36844926",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500704241,
+			"name": "dl track - 4. get download url",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "276ff64f-47ed-407a-5848-7d42dc9fd42b",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/cardis/update",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "firstname",
+					"value": "taylor",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastname",
+					"value": "edmiston",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressline1",
+					"value": "1234 any st",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressline2",
+					"value": "apt. 2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "cincinnati",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "state",
+					"value": "oh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "country",
+					"value": "USA",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "zipcode",
+					"value": "45202",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "taylor+1@lisnr.com",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "mobilephone",
+					"value": "1234567890",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500601871,
+			"name": "TODO user - 5. cardis profile upate",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "34a5f551-795e-5304-b25b-e8a0b65a4ef6",
+			"headers": "",
+			"url": "{{server}}/music/list/tracks?country=US&album_id=3501049",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"time": 1416500627352,
+			"name": "list - 2. list tracks of an album",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "4bd4ade9-996d-8dca-ea51-67392cee24f6",
+			"headers": "",
+			"url": "{{server}}/news/123",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "news - 2. get news detail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1416501028294,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"synced": false
+		},
+		{
+			"id": "52bb3690-b3a1-c637-8dec-71b00b42b1b5",
+			"headers": "",
+			"url": "{{server}}/users/accounts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "confirm_username",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "confirm_password",
+					"value": "{{password}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500422478,
+			"name": "user - 1. create account",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "580e5552-2a9f-5709-854b-66af9679af7a",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/music/preview/track?country=US&track_id=36844926",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"time": 1416500649817,
+			"name": "dl track - 1. preview",
+			"description": "save to disk",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "5c2145d0-3d80-e0f7-cfbc-18f5a1c1d816",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/users/profile",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"time": 1416500522784,
+			"name": "user - 4. get profile",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "65766920-d16a-dc79-533c-6b35694a88ee",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/music/buy/album",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "country",
+					"value": "US",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "release_id",
+					"value": "3501049",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500819522,
+			"name": "dl album - 1. purchase *blocked by cardis server not working*",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "66acd41d-869d-c7a1-7089-da926eb28c63",
+			"headers": "",
+			"url": "{{server}}/itunes/345",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "itunes - 1. get itunes link for artist",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1416501191361,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"synced": false
+		},
+		{
+			"id": "7d2e615b-4362-d147-0fb0-fc0a4a29becf",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/music/buy/track",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "country",
+					"value": "US",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "release_id",
+					"value": "3501049",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "track_id",
+					"value": "36844926",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500675165,
+			"name": "dl track - 2. purchase *blocked by cardis server not working*",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "83806829-fb33-705d-a447-0f3b5029c2c8",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/users/profile",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "firstname",
+					"value": "taylor",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastname",
+					"value": "edmiston",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressline1",
+					"value": "1234 any st",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressline2",
+					"value": "apt. 1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "cincinnati",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "state",
+					"value": "oh",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "country",
+					"value": "USA",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "zipcode",
+					"value": "45202",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobilephone",
+					"value": "1234567890",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500482071,
+			"name": "user - 3. post profile",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "8bb82a44-06b9-e6e2-2b81-8341cec24a1a",
+			"headers": "",
+			"url": "{{server}}/users/login",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "var data = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", data['token']);\n",
+			"time": 1416524907646,
+			"name": "user - 2. login",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "8ece7936-0f47-9cb3-0915-6fa65a6ee4cf",
+			"headers": "",
+			"url": "{{server}}/music/list/albums?country=US",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"time": 1416508924035,
+			"name": "list - 1. list albums",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "ca1c8dcf-5cc9-0eb3-50b2-f58bad2a8760",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/api/v2/music/download/track",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "country",
+					"value": "US",
+					"type": "text"
+				},
+				{
+					"key": "release_id",
+					"value": "3501049",
+					"type": "text"
+				},
+				{
+					"key": "track_id",
+					"value": "36844926",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1412264171705,
+			"name": "dl track - 3. download",
+			"description": "save to disk",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "e11b0293-fd77-0bce-e1ba-20c405346dd7",
+			"headers": "Authorization: Token {{token}}\n",
+			"url": "{{server}}/music/download-url/album",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "country",
+					"value": "US",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "release_id",
+					"value": "3501049",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"time": 1416500864683,
+			"name": "dl album - 3. get download url",
+			"description": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f2055792-efcd-d017-7c93-32b862748818",
+			"headers": "",
+			"url": "{{server}}/artist",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "artist - 1. get artist list",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1416501061377,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"synced": false
+		},
+		{
+			"id": "f9d1acd0-7077-ce46-b1e1-06c41ddd9da0",
+			"headers": "",
+			"url": "{{server}}/news",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "urlencoded",
+			"name": "news - 1. get news list",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1416500993121,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
+			"synced": false
+		}
+	]
+}
