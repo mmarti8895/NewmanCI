@@ -117,20 +117,20 @@
 		{
 			"id": "276ff64f-47ed-407a-5848-7d42dc9fd42b",
 			"headers": "Authorization: Token {{token}}\n",
-			"url": "{{server}}/cardis/update",
+			"url": "{{server}}/update",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
 			"data": [
 				{
 					"key": "firstname",
-					"value": "taylor",
+					"value": "tom",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "lastname",
-					"value": "edmiston",
+					"value": "raw",
 					"type": "text",
 					"enabled": true
 				},
@@ -172,7 +172,7 @@
 				},
 				{
 					"key": "email",
-					"value": "taylor+1@lisnr.com",
+					"value": "email@gmail.com",
 					"type": "text",
 					"enabled": false
 				},
@@ -187,7 +187,7 @@
 			"version": 2,
 			"tests": "",
 			"time": 1416500601871,
-			"name": "TODO user - 5. cardis profile upate",
+			"name": "TODO user - 5. profile upate",
 			"description": "",
 			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
 			"responses": [],
@@ -334,7 +334,7 @@
 			"version": 2,
 			"tests": "",
 			"time": 1416500819522,
-			"name": "dl album - 1. purchase *blocked by cardis server not working*",
+			"name": "dl album - 1. purchase *blocked by server not working*",
 			"description": "",
 			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
 			"responses": [],
@@ -390,7 +390,7 @@
 			"version": 2,
 			"tests": "",
 			"time": 1416500675165,
-			"name": "dl track - 2. purchase *blocked by cardis server not working*",
+			"name": "dl track - 2. purchase *blocked by server not working*",
 			"description": "",
 			"collectionId": "b239974f-6fa0-d5d0-d2ef-712c507c028a",
 			"responses": [],
@@ -406,13 +406,13 @@
 			"data": [
 				{
 					"key": "firstname",
-					"value": "taylor",
+					"value": "tom",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "lastname",
-					"value": "edmiston",
+					"value": "raw",
 					"type": "text",
 					"enabled": true
 				},
