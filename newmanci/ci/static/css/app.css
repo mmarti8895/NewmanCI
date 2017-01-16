@@ -1,0 +1,146 @@
+footer hr {
+    margin-top:4px;
+    margin-bottom: 10px;
+}
+.container-non-responsive {
+  /* Margin/padding copied from Bootstrap */
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 15px;
+
+  /* Set width to your desired site width */
+  width: 1170px;
+}
+.inner-base {
+    width:1000px;
+}
+.repricer-base {
+    width:600px;
+    float:left;
+}
+.repricer-base h3 {
+        margin-top:0px !important;
+}
+.outer-base {
+    width:140px;
+    margin-left:50px;
+    margin-top:84px;
+    float:left;
+    border: 2px solid #CCCCCC;
+}
+.inner-base > p, .outer-base > p, .repricer-base > p {
+    font-size:11px;
+    margin:0px !important;
+}
+#sidebar {
+  border: 2px solid #CCCCCC;
+  text-align: left;
+  width: 216px;
+}
+#sidebar a {
+  text-decoration: none;
+  opacity: 0.8;
+}
+figure {
+
+}
+.alert-size{
+    width:460px;
+    margin-left:250px;
+}
+.row-title {
+    background-color:#CCCCCC;
+    height:30px;
+    font-weight:bold;
+    font-size:18px;
+    padding-top:2px;
+    text-align: center;
+}
+.table-overwrite {
+    width: 600px;
+    float:left;
+    border: 2px solid #CCCCCC;
+    margin-bottom: 6px !important;
+}
+.table-overwrite input {
+    height:24px;
+}
+
+.table-overwrite th {
+    background-color:#CCCCCC;
+    font-size:15px;
+}
+.table-overwrite td {
+    font-size:14.5px;
+}
+.med-results {
+    margin-left:360px;
+    width:500px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.an-results{
+    margin-left:10px;
+}
+.an-form input{
+    width:100px;
+    height:36px;
+}
+.submit-buttons{
+    margin-left:460px;
+}
+.radio-override {
+    padding-top:0px !important;
+    padding-left: 40px !important;
+    padding-right:40px;
+    float:left;
+}
+.an_warning {
+    width:580px;
+    margin-left:320px;
+}
+.ph-warning {
+    width:560px;
+}
+.setup-report {
+    width: 880px;
+    margin:20px;
+    float:left;
+}
+.parameter-container{
+    width:300px;
+}
+.parameter-container input{
+    width:180px;
+    height:40px;
+    margin-top: 10px;
+    margin-right:20px;
+}
+.parameter-container-la-reports input {
+    width:180px;
+    height:40px;
+    margin-right:400px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.description_box {
+    margin: 10px;
+    width: 600px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    border: 2px solid #cccccc;
+    background-color: #C26419;
+    color: #FFFFFF;
+    float:left;
+    font-size:16px;
+    padding: 10px;
+}
+.doc_box {
+    float:left;
+    width:60px;
+}
+.response_container {
+    padding:10px;
+}
+
+

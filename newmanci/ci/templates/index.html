@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<div class="row" style="margin-left:200px;">
+    <h1>Dashboard</h1>
+    <div class="result_accordian" style="border:2px solid #FFFFFF;">
+    {% for k, v in master_dict.file.items %}
+        {% for key, value in v.items %}
+            {%  if '404' in value and '200' not in value %}
+                <div class="accordion" id="section{{ forloop.parentloop.counter }}" style="font-size:14px;font-weight:bold;color:red;">
+            {% elif '400' in value %}
+                <div class="accordion" id="section{{ forloop.parentloop.counter }}" style="font-size:14px;font-weight:bold;color:red;">
+            {% elif '500' in value %}
+                <div class="accordion" id="section{{ forloop.parentloop.counter }}" style="font-size:14px;font-weight:bold;color:red;">
+            {% else %}
+                <div class="accordion" id="section{{ forloop.parentloop.counter }}" style="font-size:14px;font-weight:bold;color:#006400;">
+            {% endif %}
+                {{ key }}<span></span>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div>
+                            <span style="color:black;font-weight:bold;">{{ value|linebreaks }}</span>
+
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}
