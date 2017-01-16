@@ -1,24 +1,24 @@
 {
 	"id": "f2e451ef-9848-c220-9895-59956f0027fa",
-	"name": "[roc nation] new staging",
+	"name": "[nation] new development",
 	"values": [
 		{
 			"key": "email",
-			"value": "mm+8895@gmail.com",
+			"value": "email@gmail.com",
 			"type": "text",
 			"name": "email",
 			"enabled": true
 		},
 		{
 			"key": "password",
-			"value": "lisnr1",
+			"value": "password123",
 			"type": "text",
 			"name": "password",
 			"enabled": true
 		},
 		{
 			"key": "server",
-			"value": "http://staging-rocnation.lisnr.com/api",
+			"value": "http://www.server.com/api",
 			"type": "text",
 			"name": "server",
 			"enabled": true
