@@ -1744,7 +1744,7 @@
 
       if (e.isDefaultPrevented()) return
 
-      $target = $(selector)
+      $target = $ul.find(selector)
 
       this.activate($this.parent('li'), $ul)
       this.activate($target, $target.parent(), function () {
